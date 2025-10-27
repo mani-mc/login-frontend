@@ -1,16 +1,57 @@
-# React + Vite
+🔐 Login System (React + Node.js + Express)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple Login Authentication App built with React (Vite) on the frontend and Node.js (Express) on the backend.
+It includes form validation, mock user authentication, and clean error handling for invalid credentials.
 
-Currently, two official plugins are available:
+🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+✅ Frontend (React + Vite)
 
-## React Compiler
+Modern, responsive login UI
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Client-side validation for:
 
-## Expanding the ESLint configuration
+Empty fields
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Invalid email format
+
+Short passwords (< 6 chars)
+
+Displays meaningful error messages
+
+Redirects to a dashboard after successful login
+
+✅ Backend (Node + Express)
+
+REST API with /api/login, /api/dashboard, and /api/health routes
+
+CORS configured for frontend & deployment domains
+
+Server-side validation for email/password format and credentials
+
+Mock JWT token returned upon successful login
+
+✅ Demo Credentials
+
+Email: mani@gmail.com
+Password: mani18
+
+🚀 Live Preview :  https://login-frontend-seven-livid.vercel.app/
+
+🧱 Tech Stack
+
+Frontend:
+
+React (Vite)
+
+Axios (for HTTP requests)
+
+Tailwind CSS (for styling)
+
+Backend:
+
+Node.js
+
+Express.js
+
+CORS middleware
